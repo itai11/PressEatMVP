@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/RelativeLayout1"
+    android:id="@+id/homeOrder"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
     <Button
-        android:id="@+id/registerButton"
+        android:id="@+id/orderSub"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -16,11 +16,11 @@
         android:text="-" />
 
     <Button
-        android:id="@+id/Button01"
+        android:id="@+id/orderAdd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/registerButton"
-        android:layout_below="@+id/registerButton"
+        android:layout_alignLeft="@+id/orderSub"
+        android:layout_below="@+id/orderSub"
         android:layout_marginTop="29dp"
         android:text="+" />
 
@@ -28,10 +28,10 @@
         android:id="@+id/expandableListView1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/registerButton"
+        android:layout_alignBottom="@+id/orderSub"
         android:layout_marginBottom="16dp"
         android:layout_marginLeft="80dp"
-        android:layout_toRightOf="@+id/registerButton" >
+        android:layout_toRightOf="@+id/orderSub" >
     </ExpandableListView>
 
 </RelativeLayout>
