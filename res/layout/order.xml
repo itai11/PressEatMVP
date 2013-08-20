@@ -5,33 +5,38 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <Button
-        android:id="@+id/orderSub"
+    <TextView
+        android:id="@+id/orderName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="22dp"
-        android:layout_marginTop="40dp"
-        android:text="-" />
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="22dp"
+		android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="Name" />
 
-    <Button
-        android:id="@+id/orderAdd"
+    <TextView
+        android:id="@+id/orderAmount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/orderSub"
-        android:layout_below="@+id/orderSub"
-        android:layout_marginTop="29dp"
-        android:text="+" />
-
-    <ExpandableListView
-        android:id="@+id/expandableListView1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="63dp"
+        android:layout_marginTop="22dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="Amount" />
+    
+    <ListView
+        android:id="@+id/orderListVIew"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/orderSub"
-        android:layout_marginBottom="16dp"
-        android:layout_marginLeft="80dp"
-        android:layout_toRightOf="@+id/orderSub" >
-    </ExpandableListView>
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="160dp" >
+        
+    </ListView>
 
 </RelativeLayout>

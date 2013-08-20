@@ -16,6 +16,14 @@
         <activity
             android:name="venture.presseatmvp.RegisterActivity"
             android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="venture.presseatmvp.ReceiptActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="venture.presseatmvp.OrderActivity"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -25,11 +33,6 @@
         <activity
             android:name="venture.presseatmvp.HomeActivity"
             android:label="@string/app_name" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 

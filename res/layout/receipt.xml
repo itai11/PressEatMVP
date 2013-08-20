@@ -10,85 +10,115 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="18dp"
-        android:text="Your Order"
+        android:text="@string/your_order"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView1"
-        android:layout_alignBottom="@+id/textView1"
-        android:layout_toRightOf="@+id/textView2"
-        android:text="TextView" />
-
-    <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/recAddress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView2"
         android:layout_marginTop="35dp"
         android:layout_toLeftOf="@+id/textView2"
-        android:text="Address" />
+        android:text="@string/address" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/receiptPhoneVal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView4"
-        android:layout_alignBottom="@+id/textView4"
-        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignBaseline="@+id/receiptPhone"
+        android:layout_alignBottom="@+id/receiptPhone"
+        android:layout_alignLeft="@+id/receiptAddressVal"
         android:text="TextView" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/receiptPizzeriaVal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView5"
-        android:layout_alignBottom="@+id/textView5"
-        android:layout_alignRight="@+id/textView8"
+        android:layout_alignBaseline="@+id/receiptPizzeria"
+        android:layout_alignBottom="@+id/receiptPizzeria"
+        android:layout_alignRight="@+id/receiptPhoneVal"
         android:text="TextView" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/receiptPizzeria"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView1"
-        android:layout_below="@+id/textView4"
-        android:layout_marginTop="26dp"
+        android:layout_alignLeft="@+id/recAddress"
+        android:layout_below="@+id/receiptPhone"
+        android:layout_marginTop="27dp"
         android:text="Pizzeria" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/receiptPhone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView5"
-        android:layout_below="@+id/textView1"
-        android:layout_marginTop="32dp"
+        android:layout_alignLeft="@+id/recAddress"
+        android:layout_below="@+id/recAddress"
+        android:layout_marginTop="27dp"
         android:text="Phone" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/receiptAddressVal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/recAddress"
+        android:layout_alignBottom="@+id/recAddress"
+        android:layout_toRightOf="@+id/textView2"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/receiptTextOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/receiptPizzeriaVal"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
+        android:layout_marginTop="55dp"
         android:text="Order" />
 
     <ScrollView
-        android:id="@+id/orderItemList"
+        android:id="@+id/scrollView1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_below="@+id/textView6"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="24dp" >
+        android:layout_height="170dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/receiptTextOrder"
+        android:layout_marginLeft="20dp" >
 
         <LinearLayout
+            android:id="@+id/receiptLinear"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical" >
         </LinearLayout>
     </ScrollView>
+
+    <Button
+        android:id="@+id/receiptOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="30dp"
+        android:text="Order" />
+
+    <Button
+        android:id="@+id/receiptListAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="Add Item" />
+
+    <Button
+        android:id="@+id/receiptCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="30dp"
+        android:text="Cancel" />
 
 </RelativeLayout>

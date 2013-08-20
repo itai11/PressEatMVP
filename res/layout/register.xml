@@ -23,7 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
-        android:layout_alignTop="@+id/textView1"
+        android:layout_alignTop="@+id/receiptAddress"
         android:ems="10"
         android:inputType="textPersonName" >
 
@@ -41,18 +41,18 @@
         android:inputType="textPostalAddress" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/receiptAddressVal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/textView1"
+        android:layout_alignRight="@+id/receiptAddress"
         android:layout_centerVertical="true"
         android:text="Phone" />
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/receiptAddress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/textView3"
+        android:layout_above="@+id/receiptAddressVal"
         android:layout_alignParentLeft="true"
         android:layout_marginBottom="59dp"
         android:layout_marginLeft="49dp"
@@ -64,7 +64,7 @@
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/registerAddress"
         android:layout_alignBottom="@+id/registerAddress"
-        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignLeft="@+id/receiptAddressVal"
         android:text="Address" />
 
     <Button
@@ -77,7 +77,7 @@
         android:text="Register" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/receiptPhone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
